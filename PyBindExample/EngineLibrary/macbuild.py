@@ -23,6 +23,8 @@ INCLUDE_DIR="-I ./include/ -I./pybind11/include/ -I/Library/Frameworks/SDL2.fram
 
 # What libraries do we want to include
 LIBRARIES="-F/Library/Frameworks -framework SDL2 `python3.5-config --ldflags`"
+# NOTE: You can try this line if the above does not work for working with SDL3.
+# LIBRARIES="`pkg-config --libs --cflags sdl3` `python3.9-config --ldflags`"
 
 # The name of our executable
 EXECUTABLE="mygameengine.so"
