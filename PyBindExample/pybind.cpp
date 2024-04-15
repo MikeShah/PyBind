@@ -1,6 +1,6 @@
 // The compile command
 // Ubuntu:
-// clang++ -shared -fPIC -std=c++11 -I./pybind11/include/ `python3.5 -m pybind11 --includes` pybind.cpp -o mymodule.so `python3.5-config --ldflags`
+// clang++ -shared -fPIC -std=c++11 -I./pybind11/include/ `python3.6 -m pybind11 --includes` pybind.cpp -o mymodule.so `python3.6-config --ldflags`
 //
 // Mac:
 // (Should be similar to Linux)
